@@ -1,0 +1,60 @@
+@import '../../config/_variables.scss';
+@import 'bulma/sass/components/navbar.sass';
+
+.Header {
+  &-wrapper {
+    background: linear-gradient(
+      to bottom,
+      rgba(#333, 0.75) 25%,
+      rgba(#333, 0.5) 50%,
+      rgba(#333, 0) 75%,
+      rgba(#333, 0) 100%
+    );
+  }
+
+  &-inner {
+    background: none;
+    min-height: $header-height;
+    width: $max-page-width;
+    margin: 0 auto;
+  }
+
+  &-logo-container {
+    min-height: $header-height;
+    align-items: center;
+
+    .navbar-burger {
+      span {
+        width: 22px;
+        height: 1.5px;
+        color: $white;
+      }
+    }
+  }
+
+  &-logo {
+    margin: 0;
+    font-size: $size-3;
+    color: rgba($white, 0.9);
+  }
+
+  &-links-list {
+    align-items: center;
+    list-style: none;
+  }
+
+  &-link {
+    margin-left: $size-1;
+
+    a {
+      color: rgba($white, 0.9);
+      text-decoration: none;
+    }
+
+    &-search {
+      background-color: transparent;
+      border: none;
+      outline: none;
+    }
+  }
+}

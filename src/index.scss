@@ -1,0 +1,10 @@
+@import 'bulma/sass/utilities/_all.sass';
+@import 'bulma/sass/grid/columns.sass';
+
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
