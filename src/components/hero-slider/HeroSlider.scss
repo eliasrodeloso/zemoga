@@ -1,0 +1,44 @@
+@import '../../config/_variables.scss';
+
+.HeroSlider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 900;
+  width: 100%;
+
+  &-slide {
+    position: relative;
+  }
+
+  &-background {
+    max-width: 100%;
+
+    @include desktop {
+      width: 100%;
+    }
+  }
+
+  &-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    right: 0;
+    margin-right: $size-7;
+    margin-left: 0;
+    padding: $touch-header-height 0;
+
+    @include desktop {
+      padding: $desktop-header-height + ($desktop-header-height / 3)
+        (100vw - $max-page-width) / 2;
+    }
+
+    @include until($desktop) {
+      .column {
+        padding: 0;
+      }
+    }
+  }
+}
