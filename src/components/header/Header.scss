@@ -3,24 +3,24 @@
 
 .Header {
   &-wrapper {
-    background: linear-gradient(
-      to bottom,
-      rgba(#333, 0.75) 25%,
-      rgba(#333, 0.5) 50%,
-      rgba(#333, 0) 75%,
-      rgba(#333, 0) 100%
-    );
+    background: linear-gradient(to bottom, rgba(#333, 0.5), rgba(#333, 0));
+    position: relative;
+    z-index: 1000;
   }
 
   &-inner {
     background: none;
-    min-height: $header-height;
+    min-height: $touch-header-height;
     width: $max-page-width;
     margin: 0 auto;
+
+    @include desktop {
+      min-height: $desktop-header-height;
+    }
   }
 
   &-logo-container {
-    min-height: $header-height;
+    min-height: $touch-header-height;
     align-items: center;
 
     .navbar-burger {
@@ -29,6 +29,10 @@
         height: 1.5px;
         color: $white;
       }
+    }
+
+    @include desktop {
+      min-height: $desktop-header-height;
     }
   }
 
