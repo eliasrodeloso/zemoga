@@ -12,7 +12,7 @@ const VotingCard = () => (
         <h4>What&apos;s your opinion on</h4>
         <h1>Pope Francis?</h1>
       </header>
-      <content className="VotingCard-content">
+      <section className="VotingCard-content">
         <p>
           He&apos;s talking tough on clergy sexual abuse, but is he just another
           papal pervert protector? (thumbs down) or a true pedophile punishing
@@ -23,7 +23,7 @@ const VotingCard = () => (
           <a href="http://wikipedia.org">More information</a>
         </div>
         <h2>What&apos;s your veredict?</h2>
-      </content>
+      </section>
       <footer className="VotingCard-footer">
         <button
           type="button"

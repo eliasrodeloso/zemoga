@@ -1,3 +1,17 @@
-.Home-container {
-  min-height: 100vh;
+@import '../../config/variables.scss';
+
+.Home {
+  &-container {
+    min-height: 100vh;
+  }
+
+  &-content {
+    width: $mobile-max-page-width;
+    margin: 0 auto;
+    padding-top: $size-2;
+
+    @include desktop {
+      width: $max-page-width;
+    }
+  }
 }

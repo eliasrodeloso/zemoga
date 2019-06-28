@@ -1,0 +1,35 @@
+@import '../../config/_variables.scss';
+
+.Message {
+  background-color: #ebebeb;
+  padding: $size-3;
+
+  &-title {
+    h4 {
+      font-size: 1.125em;
+      font-weight: 200;
+    }
+
+    h1 {
+      font-size: 2em;
+    }
+
+    h4,
+    h1 {
+      margin: 0;
+    }
+  }
+
+  &-text {
+    display: flex;
+    align-items: center;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  &-close {
+    padding: 0 0 0 $size-4;
+  }
+}
