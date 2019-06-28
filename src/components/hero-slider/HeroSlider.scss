@@ -4,24 +4,27 @@
   z-index: 900;
   width: 100%;
 
-  @include until($touch) {
-    height: 100vh;
-  }
-
   &-content {
     width: 100%;
     margin-right: $size-7;
     margin-left: 0;
-    padding: $touch-header-height 0;
+    padding: $touch-header-height 0 0 0;
     background-position-x: 50%;
+    height: 65vh;
 
     @include desktop {
       padding: $desktop-header-height + ($desktop-header-height / 3)
-        (100vw - $max-page-width) / 2;
+        (100vw - $max-page-width) / 2 0;
+      height: 75vh;
     }
 
-    @include until($desktop) {
-      .column {
+    .column {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      @include until($desktop) {
         padding: 0;
       }
     }

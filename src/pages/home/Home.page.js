@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Header from '../../components/header/Header';
 import HeroSlider from '../../components/hero-slider/HeroSlider';
 import VotingCard from '../../components/voting-card/VotingCard';
+import Closing from '../../components/closing/Closing';
 import popeImage from '../../assets/images/header-background.jpg';
 import './Home.scss';
 
@@ -14,10 +15,12 @@ const Home = () => (
           title: 'Pope',
           image: popeImage,
           content: (
-            <div className="column is-half-desktop">
-              <VotingCard />
-              <div className="asda">asdasd</div>
-            </div>
+            <Fragment>
+              <div className="column is-half-desktop">
+                <VotingCard />
+              </div>
+              <Closing />
+            </Fragment>
           )
         }
       ]}

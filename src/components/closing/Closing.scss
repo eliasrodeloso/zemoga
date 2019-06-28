@@ -1,0 +1,59 @@
+@import '../../config/variables.scss';
+
+.Closing {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  &-bar {
+    background-color: rgba(112, 112, 112, 0.302);
+    display: flex;
+    align-items: center;
+  }
+
+  &-progress {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    min-width: fit-content;
+    padding: $size-7;
+
+    &:after {
+      content: '';
+      position: absolute;
+      right: -9px;
+      bottom: 30%;
+      border-width: 7px 0 7px 9px;
+      border-color: transparent transparent transparent rgba(112, 112, 112, 0.5);
+      border-style: solid;
+    }
+
+    &-left {
+      padding: $size-7 / 2 $size-7;
+      background-color: rgba(255, 255, 255, 0.702);
+      width: 100%;
+      height: 100%;
+    }
+
+    &-text {
+      color: $white;
+      text-transform: uppercase;
+      font-size: 80%;
+
+      &--left {
+        display: flex;
+        align-items: center;
+        color: $black;
+        font-size: 145%;
+        line-height: 150%;
+      }
+
+      &--number {
+        font-size: 150%;
+        font-weight: 700;
+        padding-right: $size-7 / 2;
+      }
+    }
+  }
+}
