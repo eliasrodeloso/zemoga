@@ -9,12 +9,10 @@ const HeroSlider = ({ slides }) => (
     <Slider>
       {slides.map(slide => (
         <div className="HeroSlider-slide" key={slide.title}>
-          <img
-            className="HeroSlider-background"
-            src={slide.image}
-            alt={slide.title}
-          />
-          <div className="HeroSlider-content columns is-gapless">
+          <div
+            style={{ backgroundImage: `url(${slide.image})` }}
+            className="HeroSlider-content columns is-gapless"
+          >
             {slide.content}
           </div>
         </div>
