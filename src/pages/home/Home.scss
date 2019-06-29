@@ -13,5 +13,9 @@
     @include desktop {
       width: $max-page-width;
     }
+
+    h1 {
+      font-size: 225%;
+    }
   }
 }
