@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import Header from '../../components/header/Header';
 import HeroSlider from '../../components/hero-slider/HeroSlider';
-import VotingCard from '../../components/voting-card/VotingCard';
+import VotingCardContainer from '../../containers/voting-card/VotingCard.container';
 import Closing from '../../components/closing/Closing';
 import Message from '../../components/message/Message';
 import PreviousRuler from '../../components/previous-ruler/PreviousRuler';
@@ -23,9 +23,9 @@ const Home = () => (
           content: (
             <Fragment>
               <div className="column is-half-desktop">
-                <VotingCard title={title} {...ruler} />
+                <VotingCardContainer title={title} {...ruler} />
               </div>
-              <Closing />
+              <Closing actualRulerDuration={initialData.actualRulerDuration} />
             </Fragment>
           )
         };

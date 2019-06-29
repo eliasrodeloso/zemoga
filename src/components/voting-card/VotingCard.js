@@ -5,7 +5,9 @@ import { ReactComponent as ThumnsDownIcon } from '../../assets/icons/thumbs-down
 import { ReactComponent as WikiIcon } from '../../assets/icons/wiki.svg';
 import './VotingCard.scss';
 
-const VotingCard = ({ title, description, informationLink }) => (
+const VotingCard = ({
+  title, description, informationLink, actions
+}) => (
   <div className="VotingCard">
     <div className="VotingCard-crop" />
     <div className="VotingCard-wrapper">
@@ -25,12 +27,14 @@ const VotingCard = ({ title, description, informationLink }) => (
         <button
           type="button"
           className="VotingCard-choice VotingCard-choice--up"
+          onClick={() => actions.voteUp(title)}
         >
           <ThumnsUpIcon />
         </button>
         <button
           type="button"
           className="VotingCard-choice VotingCard-choice--down"
+          onClick={() => actions.voteDown(title)}
         >
           <ThumnsDownIcon />
         </button>
@@ -42,7 +46,8 @@ const VotingCard = ({ title, description, informationLink }) => (
 VotingCard.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  informationLink: PropTypes.string.isRequired
+  informationLink: PropTypes.string.isRequired,
+  actions: PropTypes.objectOf(PropTypes.func).isRequired
 };
 
 export default VotingCard;

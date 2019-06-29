@@ -56,5 +56,9 @@
         "detractors": 36
       }
     }
-  ]
+  ],
+  "actualRulerDuration": {
+    "maximumDays": 30,
+    "daysLeft": 22
+  }
 }

@@ -2,20 +2,24 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Closing.scss';
 
-const Closing = ({ daysLeft }) => (
+const Closing = ({ actualRulerDuration }) => (
   <div className="Closing">
     <div className="Closing-bar">
       <div
         className="Closing-progress"
-        style={{ width: `${((30 - daysLeft) * 100) / 30}%` }}
+        style={{
+          width: `${((30 - actualRulerDuration.daysLeft) * 100) / 30}%`
+        }}
       >
         <span className="Closing-progress-text">Closing in</span>
       </div>
       <div className="Closing-progress-left">
         <span className="Closing-progress-text--left">
-          <span className="Closing-progress-text--number">{daysLeft}</span>
+          <span className="Closing-progress-text--number">
+            {actualRulerDuration.daysLeft}
+          </span>
           {' '}
-days
+          days
         </span>
       </div>
     </div>
@@ -23,11 +27,17 @@ days
 );
 
 Closing.propTypes = {
-  daysLeft: PropTypes.number
+  actualRulerDuration: PropTypes.shape({
+    maximumDays: PropTypes.number,
+    daysLeft: PropTypes.number
+  })
 };
 
 Closing.defaultProps = {
-  daysLeft: 22
+  actualRulerDuration: {
+    maximumDays: 30,
+    daysLeft: 22
+  }
 };
 
 export default Closing;
