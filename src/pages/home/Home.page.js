@@ -12,6 +12,7 @@ import markPic from '../../assets/images/Mark.jpg';
 import malalaPic from '../../assets/images/Malala.jpg';
 import cristinaPic from '../../assets/images/Cristina.jpg';
 import './Home.scss';
+import Footer from '../../components/footer/Footer';
 
 const previousRulers = [
   {
@@ -108,6 +109,9 @@ const Home = () => (
     <section className="Home-banner">
       <Banner />
     </section>
+    <div className="Home-footer">
+      <Footer />
+    </div>
   </div>
 );
 

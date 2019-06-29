@@ -6,7 +6,8 @@
   }
 
   &-content,
-  &-banner {
+  &-banner,
+  &-footer {
     width: $mobile-max-page-width;
     margin: 0 auto;
     padding-top: $size-2;
@@ -20,9 +21,5 @@
     h1 {
       font-size: 225%;
     }
-  }
-
-  &-banner {
-    padding-bottom: $size-2;
   }
 }
