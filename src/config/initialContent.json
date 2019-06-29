@@ -1,0 +1,60 @@
+{
+  "actualRulers": [
+    {
+      "title": "Pope Francis",
+      "picture": "",
+      "description": "He's talking tough on clergy sexual abuse, but is he just another papal pervert protector? (thumbs down) or a true pedophile punishing pontiff (thumbs up)",
+      "informationLink": "https://wikipedia.org"
+    }
+  ],
+  "previousRulers": [
+    {
+      "picture": "Kanye.jpg",
+      "name": "Kanye West",
+      "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
+      "date": "28/05/2019",
+      "category": "Entertainment",
+      "result": "winner",
+      "statistics": {
+        "supporters": 64,
+        "detractors": 36
+      }
+    },
+    {
+      "picture": "Mark.jpg",
+      "name": "Mark Zuckerberg",
+      "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
+      "date": "28/05/2019",
+      "category": "Business",
+      "result": "looser",
+      "statistics": {
+        "supporters": 36,
+        "detractors": 64
+      }
+    },
+    {
+      "picture": "Cristina.jpg",
+      "name": "Cristina Fernández de Kirchner",
+      "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
+      "date": "28/05/2019",
+      "category": "Politics",
+      "result": "looser",
+      "statistics": {
+        "supporters": 36,
+        "detractors": 64
+      }
+    },
+    {
+      "picture": "Malala.jpg",
+      "name": "Malala Yousafzai",
+      "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
+      "date": "28/05/2019",
+      "category": "Entertainment",
+      "result": "winner",
+      "statistics": {
+        "supporters": 64,
+        "detractors": 36
+      }
+    }
+  ]
+}
