@@ -1,0 +1,68 @@
+@import '../../config/_variables.scss';
+
+.Footer {
+  margin-top: $size-7;
+  margin-left: 0;
+  margin-right: 0;
+  border-top: 1px dotted $grey;
+  padding: $size-5 0;
+
+  &-navigation {
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    @include from($desktop) {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &-item {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin-top: $size-7;
+
+    @include from($desktop) {
+      margin-top: 0;
+      margin-left: $size-6;
+      display: inline;
+      width: auto;
+    }
+
+    &:first-of-type {
+      margin: 0;
+    }
+  }
+
+  &-column {
+    display: flex;
+    align-items: center;
+    margin: 0 -$size-7;
+
+    &--right {
+      justify-content: center;
+
+      @include from($desktop) {
+        justify-content: flex-end;
+      }
+    }
+  }
+
+  &-social {
+    &-icon {
+      margin-left: $size-5;
+    }
+  }
+
+  &-link {
+    color: $grey;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

@@ -3,6 +3,7 @@
 .Message {
   background-color: #ebebeb;
   padding: $size-3;
+  position: relative;
 
   &-title {
     h4 {
@@ -30,6 +31,14 @@
   }
 
   &-close {
-    padding: 0 0 0 $size-4;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: $size-5;
+
+    @include from($desktop) {
+      padding: 0 0 0 $size-4;
+      position: relative;
+    }
   }
 }

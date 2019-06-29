@@ -80,8 +80,12 @@
   &-result {
     position: absolute;
     left: 0rem;
-    bottom: 36%;
+    bottom: 52%;
     padding: 6px;
+
+    @include from($desktop) {
+      bottom: 36%;
+    }
 
     &--winner {
       background-color: rgba($color: $primary, $alpha: 0.8);
@@ -95,9 +99,20 @@
   &-meta {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+
+    @include from($desktop) {
+      flex-direction: row;
+    }
 
     &-right {
-      text-align: right;
+      text-align: left;
+      margin-top: $size-7;
+
+      @include from($desktop) {
+        text-align: right;
+        margin: 0;
+      }
     }
   }
 

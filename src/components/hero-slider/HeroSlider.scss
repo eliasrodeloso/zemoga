@@ -10,12 +10,16 @@
     margin-left: 0;
     padding: $touch-header-height 0 0 0;
     background-position-x: 50%;
-    height: 65vh;
+    min-height: 100vh;
 
     @include desktop {
       padding: $desktop-header-height + ($desktop-header-height / 3)
         (100vw - $max-page-width) / 2 0;
-      height: 75vh;
+      min-height: 82vh;
+    }
+
+    @media (hover: none) and (pointer: coarse) {
+      min-height: 91vh;
     }
 
     .column {
