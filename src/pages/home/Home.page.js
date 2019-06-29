@@ -5,6 +5,7 @@ import VotingCard from '../../components/voting-card/VotingCard';
 import Closing from '../../components/closing/Closing';
 import Message from '../../components/message/Message';
 import PreviousRuler from '../../components/previous-ruler/PreviousRuler';
+import Banner from '../../components/banner/Banner';
 import popeImage from '../../assets/images/header-background.jpg';
 import kanyePic from '../../assets/images/Kanye.jpg';
 import markPic from '../../assets/images/Mark.jpg';
@@ -103,6 +104,9 @@ const Home = () => (
           </div>
         </div>
       </div>
+    </section>
+    <section className="Home-banner">
+      <Banner />
     </section>
   </div>
 );

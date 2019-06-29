@@ -1,0 +1,32 @@
+@import '../../config/_variables.scss';
+
+.Banner {
+  background-image: linear-gradient(
+      to bottom,
+      rgba($color: #fff, $alpha: 0.75),
+      rgba($color: #fff, $alpha: 0.75)
+    ),
+    url('../../assets/images/banner-background.jpg');
+  margin: 0;
+  background-position-y: 50%;
+
+  &-cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-copy {
+    h1 {
+      font-weight: 300;
+    }
+  }
+
+  &-button {
+    color: $black;
+    border: 3px solid $black-bis;
+    background-color: transparent;
+    font-size: 125%;
+    padding: $size-7 $size-4;
+  }
+}
