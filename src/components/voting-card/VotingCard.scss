@@ -77,11 +77,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    min-width: 5%;
     width: 50%;
     padding: $size-7;
     border: 0;
     outline: 0;
     cursor: pointer;
+    transition: all 0.3s ease-in;
 
     &--up {
       background-color: rgba($color: $primary, $alpha: 0.8);

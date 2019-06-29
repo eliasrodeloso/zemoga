@@ -3,6 +3,12 @@ import { bindActionCreators } from 'redux';
 import VotesActions from '../../core/actions/votes.action';
 import VotingCard from '../../components/voting-card/VotingCard';
 
+const mapStateToProps = state => ({
+  store: {
+    ...state.votesStore
+  }
+});
+
 const mapDispatchToProps = dispatch => ({
   actions: bindActionCreators(
     { voteUp: VotesActions.votesUp, voteDown: VotesActions.votesDown },
@@ -11,13 +17,17 @@ const mapDispatchToProps = dispatch => ({
 });
 
 const mapOwnProps = (stateProps, dispatchProps, ownProps) => ({
-  ...stateProps,
   ...dispatchProps,
-  ...ownProps
+  ...ownProps,
+  store: {
+    ...stateProps.store.votedRulers.filter(
+      votedRuler => votedRuler.rulerName === ownProps.title
+    )[0]
+  }
 });
 
 export default connect(
-  null,
+  mapStateToProps,
   mapDispatchToProps,
   mapOwnProps
 )(VotingCard);
