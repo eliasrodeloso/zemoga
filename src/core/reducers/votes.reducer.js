@@ -1,6 +1,6 @@
 import { VOTES_DOWN, VOTES_UP } from '../actions/votes.action';
 
-const initialState = {
+export const initialState = {
   voters: 0,
   votedRulers: [{ rulerName: '', votesUp: 0, votesDown: 0 }]
 };
