@@ -8,12 +8,12 @@ const Footer = () => (
     <div className="Footer-column column">
       <ul className="Footer-navigation">
         <li className="Footer-item">
-          <a href="/terms" className="Footer-link">
+          <a href="/terms-and-conditions" className="Footer-link">
             Terms and Conditions
           </a>
         </li>
         <li className="Footer-item">
-          <a href="/privacy" className="Footer-link">
+          <a href="/privacy-policy" className="Footer-link">
             Privacy Policy
           </a>
         </li>
